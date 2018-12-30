@@ -2,7 +2,7 @@
 #
 # Simply execute this script to setup the full toolchain:
 #
-# curl -sSL https://raw.githubusercontent.com/marcelbirkner/docker-ci-tool-stack/master/setup.sh | bash -s
+# curl -sSL https://raw.githubusercontent.com/dcmikki/docker-ci-tool-stack/blob/master/setup.sh | bash -s
 #
 # Prerequisites:
 # - Docker & Docker Toolbox v1.10
