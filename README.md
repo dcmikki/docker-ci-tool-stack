@@ -116,10 +116,10 @@ If you want to use Docker in Windows with VirtualBox and Docker Toolbox, follow 
 ### Install Bash terminal in Windows with git
 There are diffent ways to install the bash terminal in Windows system, but the most popular are:
 
-* Git v2.6.4
+* __Git v2.6.4__
 The link to download this program is [here](https://git-scm.com/download/win)
 
-* MSYS2 installer
+* __MSYS2 installer__
 This program only install a Unix terminal on Windows System and later It necessary to install `git`. The official documentation is really good and we just follow all the steps from this [link](https://www.msys2.org/). if everythins is fine you should be able to check the version of git by:
 
 ```
