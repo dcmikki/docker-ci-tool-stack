@@ -109,6 +109,46 @@ to
 
 This is because '/usr/bin/docker' is the docker binary, see [Issue 24](https://github.com/marcelbirkner/docker-ci-tool-stack/issues/24).
 
+# Windows Users
+
+If you want to use Docker in Windows with VirtualBox and Docker Toolbox, follow these steps:
+
+### Install Bash terminal in Windows with git
+There are diffent ways to install the bash terminal in Windows system, but the most popular are:
+
+* Git v2.6.4
+The link to download this program is [here](https://git-scm.com/download/win)
+
+* MSYS2 installer
+This program only install a Unix terminal on Windows System and later It necessary to install `git`. The official documentation is really good and we just follow all the steps from this [link](https://www.msys2.org/). if everythins is fine you should be able to check the version of git by:
+
+```
+$ git --version
+git version 2.19.1
+```
+### Install Docker Tools
+Install Docker Toolbox in Windows from [Docker Official Documentation](https://docs.docker.com/toolbox/toolbox_install_windows). If you already installed before `Virtualbox` and `git`, just install the rest of tools including `docker-compose` and `docker-machine` commands. If everything went fine, docker-compose --version and docker-machine --version  should give something like this:
+
+```
+$ docker-compose --version
+docker-machine version 0.16.0, build 702c267f
+
+$ docker-compose --version
+docker-compose version 1.20.1, build 5d8c71b2
+```
+
+docker-compose -f docker-compose.yml up
+
+### Getting started
+
+Its possible to get all docker containers up and running without clone the repo. There is a script `setup.sh` for the kickstart. The script will clone the repo from gitlhub, set up the virtual machine in Virtualbox and deploy all the resources within `docker-compose.yaml`.
+
+Simply execute this script to setup the full toolchain:
+
+```
+ curl -sSL https://raw.githubusercontent.com/dcmikki/docker-ci-tool-stack/master/setup.sh | bash -s
+```
+
 # Selenium Grid
 
 You have start the selenium grid with a separate command, since the selenium container are
