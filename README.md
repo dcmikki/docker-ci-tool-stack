@@ -137,8 +137,6 @@ $ docker-compose --version
 docker-compose version 1.20.1, build 5d8c71b2
 ```
 
-docker-compose -f docker-compose.yml up
-
 ### Getting started
 
 Its possible to get all docker containers up and running without clone the repo. There is a script `setup.sh` for the kickstart. The script will clone the repo from gitlhub, set up the virtual machine in Virtualbox and deploy all the resources within `docker-compose.yaml`.
